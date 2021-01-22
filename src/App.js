@@ -2,10 +2,10 @@ import React, { Component } from "react";
 
 import AddForm from './components/AddForm';
 import SmurfDisplay from './components/SmurfDisplay';
+import axios from 'axios';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css";
-import SmurfForm from "./components/SmurfForm";
 
 class App extends Component {
   
@@ -16,8 +16,8 @@ class App extends Component {
           <a className="navbar-brand">Smurf Village Database</a>
         </nav>
         <main>
-          <SmurfForm />
-          <SmurfList />
+          <AddForm/>
+          <SmurfDisplay/>
         </main>
       </div>
     );
