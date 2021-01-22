@@ -5,6 +5,7 @@ import SmurfDisplay from './components/SmurfDisplay';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css";
+import SmurfForm from "./components/SmurfForm";
 
 class App extends Component {
   
@@ -15,8 +16,8 @@ class App extends Component {
           <a className="navbar-brand">Smurf Village Database</a>
         </nav>
         <main>
-          <AddForm/>
-          <SmurfDisplay/>
+          <SmurfForm />
+          <SmurfList />
         </main>
       </div>
     );
