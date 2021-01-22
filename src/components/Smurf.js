@@ -1,13 +1,15 @@
-import React from 'react';
+import React from "react";
+import StyledItem from "./styled/StyledItem";
 
-class Smurf extends React.Component {
-    render() {
-        const { smurf } = this.props;
-
-        return(<div data-testid="smurf" className="card">
-        </div>);
-    }
-}
+function Smurf({smurf}){
+    return (
+        <StyledItem>
+            <p>{smurf.name}</p>
+            <p>{smurf.age}</p>
+            <p>{smurf.height}</p>
+        </StyledItem>
+    )
+};
 
 export default Smurf;
 
